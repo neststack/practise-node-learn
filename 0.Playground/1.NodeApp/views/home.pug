@@ -1,0 +1,18 @@
+doctype html
+head
+    meta(charset='UTF-8')
+    meta(http-equiv='X-UA-Compatible' content='IE=edge')
+    meta(name='viewport' content='width=device-width, initial-scale=1.0')
+    title Document
+body
+    h1 NodeApp
+    a(target='_blank' href='http://localhost:5000/users') Users
+    br
+    a(target='_blank' href='http://localhost:5000/posts') Posts
+    br
+    p Users supports Get and Post queries
+    p Posts supports Get and Post queries
+    h2 Pug Iteration:
+    ul
+        each val, key in {1: 'Tom', 2: 'Dick', 3: 'Harry'}
+            li= key + ': ' + val
